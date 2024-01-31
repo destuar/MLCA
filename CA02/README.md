@@ -1,37 +1,59 @@
-# Housing Data Analysis Project
 
-## Project Overview
-This project involves a comprehensive analysis of a housing dataset, focusing on exploring various aspects such as house prices, quality, year built, and other key features. The analysis includes data visualization, statistical analysis, and modeling to understand the factors influencing house prices.
+# Spam Email Classifier
+
+This project presents a Python-based spam email classifier using machine learning techniques. It employs the Gaussian Naive Bayes algorithm to distinguish between spam and non-spam (ham) emails. The classifier is trained and evaluated on pre-processed datasets containing both types of emails.
+
+## Features
+
+- **Dictionary Creation**: Builds a dictionary of the most common words found in the training emails.
+- **Feature Extraction**: Extracts features from emails using word frequency relative to the dictionary.
+- **Naive Bayes Classification**: Utilizes the Gaussian Naive Bayes model for categorizing emails.
+- **Performance Metrics**: Calculates the accuracy of the classifier against a test dataset.
+
+## Prerequisites
+
+- Python 3.x
+- NumPy
+- scikit-learn
+
+## Dataset
+
+The classifier requires a dataset of emails categorized into 'spam' and 'non-spam'. These should be organized into separate directories for training and testing, with individual emails stored as separate files.
 
 ## Installation
-To run this project, ensure you have the following libraries installed:
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Statsmodels
 
-You can install these packages using pip:
-pip install pandas numpy matplotlib seaborn statsmodels
+1. Clone or download the repository.
 
-## File Descriptions
-- `CA01.ipynb`: Main Jupyter notebook containing the data analysis and visualizations.
+## Usage
 
-## How to Run
-Open the `CA01.ipynb` notebook in Jupyter Notebook or JupyterLab and run the cells sequentially to reproduce the analysis.
+1. Set the directory paths for your training and testing datasets in the script (`TRAIN_DIR` and `TEST_DIR`).
+2. Run the script to build the dictionary, extract features, train the model, and evaluate its performance.
 
-## Analysis Summary
-The notebook starts with data loading and preprocessing, followed by exploratory data analysis (EDA), where we visualize distributions and relationships between different variables. We then perform more detailed analysis, including creating heatmaps, pair plots, and bar plots, to understand deeper insights into the housing market.
+## Structure
 
-## Results and Insights
-The analysis reveals interesting insights into the housing market, such as the impact of overall quality and neighborhood on sale prices, and the relationship between house features like year built, basement size, and overall quality with the sale price.
+- `make_Dictionary(root_dir)`: Generates a word frequency dictionary from the training emails.
+- `extract_features(mail_dir)`: Creates feature vectors and labels for training and testing based on email content.
+- `TRAIN_DIR` & `TEST_DIR`: Directory paths for training and test datasets.
+- Model Training and Evaluation: The script trains using the training data and assesses accuracy using the test data.
 
-## Future Work
-Future analysis could include predictive modeling to forecast house prices based on various features and further exploration of other variables not covered in this analysis.
+## Output
 
-## Contributors
-- [Andrew Xu, Yannick Angouo Lopes, Diego Estuar]
+The script will output the progress of email processing, model training, and finally, the classifier's accuracy score on the test dataset.
+
+## Authors
+
+- Andrew Xu
+- Yannick Angouo Lopes
+- Diego Estuar
 
 ## License
-This project is open source and available to anyone interested in using or contributing to it.
 
+This project is open-source and available under [LICENSE](LICENSE).
+
+## Acknowledgments
+
+Special thanks to all contributors and those who have provided valuable feedback and suggestions to improve this classifier.
+
+---
+
+This README offers a comprehensive overview and guide for the Spam Email Classifier. Ensure your datasets are correctly prepared and directory paths properly set for optimal use of the script.
