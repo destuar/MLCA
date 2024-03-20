@@ -1,5 +1,3 @@
-# Ensemble Methods Comparison Notebook
-
 # CA05 - KNN Analysis for Movie Recommendations
 
 This Jupyter notebook explores the use of the K-Nearest Neighbors (KNN) algorithm to find movies similar to "The Post" based on genre and rating. By implementing the KNN model, this notebook aims to demonstrate how machine learning can be used for making movie recommendations.
